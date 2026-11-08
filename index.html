@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head> <link rel="icon" type="image/png" href="favicon.png">
+ <script>
+  // Instantly snap to the slide if arriving from the manifesto link
+  if (window.location.hash === '#life') {
+    window.addEventListener('DOMContentLoaded', () => {
+      const target = document.getElementById('life');
+      if (target) {
+        target.scrollIntoView({ behavior: 'auto', block: 'start' });
+      }
+    });
+  }
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Tractionn — Powering growth beyond metros</title>
