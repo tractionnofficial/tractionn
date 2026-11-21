@@ -841,10 +841,17 @@ footer a{transition:color .35s ease!important}
 @media (max-width:860px){footer .flogo{height:.78rem!important}}
 
 /* header menu: shrink to its text, compact buttons; taller footer band */
+@media (max-width:860px){
 header .hmenu{width:max-content!important;min-width:0!important;max-width:calc(100vw - 1.8rem)!important;padding:.4rem!important;gap:.3rem!important;border-radius:16px!important}
 header .hmenu .hjoin,header .hmenu .pill{width:100%!important;min-width:0!important;height:auto!important;min-height:0!important;padding:.55rem 1.1rem!important;font-size:.9rem!important;line-height:1.2!important;white-space:nowrap}
+}
 @media (min-width:861px){footer{padding-top:.75rem!important;padding-bottom:.55rem!important}}
 @media (max-width:860px){footer{padding-top:.85rem!important;padding-bottom:.6rem!important}}
+
+
+/* header logo slightly smaller */
+header .logo img{height:.9rem!important}
+@media (max-width:860px){header .logo img{height:.74rem!important}}
 </style>
 </head>
 <body>
